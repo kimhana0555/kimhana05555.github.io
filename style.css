@@ -144,3 +144,32 @@ body {
     margin-bottom: 10px;
   }
   
+  #personal {
+  background-color: #fff;
+  color: #000;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+#personal ul {
+  list-style: none;
+  padding: 0;
+}
+
+#personal li {
+  margin: 8px 0;
+  font-size: 1rem;
+}
+
+/* 기본 세로 모드 */
+#profile-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 가로 모드 (더블탭 시 클래스 적용) */
+body.landscape #profile-container {
+  flex-direction: row;
+}

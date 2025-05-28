@@ -2,124 +2,135 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>김하나의 포트폴리오</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>김하나 - 포트폴리오</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <style>
+    section {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+    }
+    h2 {
+      margin-top: 0;
+    }
+  </style>
 </head>
 <body>
 
   <header>
     <h1>김하나</h1>
-    <p>평범하게 코딩을 하고싶은 사람</p>
+    <p>평범하게 코딩을 하고 싶은 사람</p>
     <nav>
       <a href="#about">About</a> |
       <a href="#projects">Projects</a> |
       <a href="#skills">Skills</a> |
-      <a href="#music">music</a> |
-      <a href="#games">games</a> |
+      <a href="#music">Music</a> |
+      <a href="#games">Games</a> |
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main>
-    <section id="about">
+    <section id="profile-container">
+      <div class="profile-img">
+      <img src="images/profile.jpg" alt="프로필 사진" onclick="toggleInfo()" />
+      </div>
+      <div class="info-box">
+        <p><strong>이름:</strong> 김하나</p>
+        <p><strong>나이:</strong> 18</p>
+        <p><strong>성별:</strong> 남</p>
+        <p><strong>MBTI:</strong> INTJ</p>
+        <p><strong>좋아하는 것:</strong> 게임, 시와 소설, 음악과 노래</p>
+        <p><strong>싫어하는 것:</strong> 싸가지없는 것</p>
+      </div>
+    </section>
+
+    <section class="extra-info" id="about">
       <h2>About Me</h2>
-      <p>안녕하세요! 웹 개발자를 꿈꾸는 김하나입니다. <br>
-        웹은 무언가를 만들었을 때의 얼굴이라고 생각하고 있습니다 <br>
-        그런만큼 그 얼굴을 아름답게 만드는 역할을 하고싶습니다. <br>
-        음 비유하자면 성형의 정도일까요?
-      </p>
+      <p>안녕하세요! 웹 개발자를 꿈꾸는 김하나입니다.<br>
+      웹은 무언가를 만들었을 때의 얼굴이라고 생각하고 있습니다. <br>
+      그런만큼 그 얼굴을 아름답게 만드는 역할을 하고 싶습니다. <br>
+      음, 비유하자면 성형의 정도일까요?</p>
     </section>
 
     <section id="projects">
       <h2>Projects</h2>
       <div class="project-card">
         <h3>보문상담소</h3>
-        <p>학교 동아리 활동으로 진행한 것입니다. <br>
-            파이썬을 사용했고 객체지향을 통해 알아보기 쉬운 코드를 짰습니다. <br>
-            HTML을 통해 간단한 웹사이트를 만들어보기도 하였습니다. <br>
-        </p>
-    </div>
-
-        <div class="project-card">
-            <h3>포트폴리오 사이트</h3>
-            <p>지금 보고 있는 이 웹사이트는 직접 HTML, CSS로 만든 포트폴리오입니다! <br>
-                열심히 채워나가고 있으니까 봐주세요. 
-            </p>
-            <a href="#">🔗 깃허브 코드</a>
-          </div>
-        </div>
-      </section>>
+        <p>학교 동아리 활동으로 진행한 프로젝트입니다.<br>
+        파이썬 객체지향으로 백엔드를 구성했고, 간단한 HTML로 웹 UI도 제작했습니다.</p>
+      </div>
+      <div class="project-card">
+        <h3>포트폴리오 사이트</h3>
+        <p>현재 보고 있는 이 웹사이트는 직접 HTML, CSS로 제작한 포트폴리오입니다!</p>
+        <a href="#">🔗 깃허브 코드</a>
+      </div>
+    </section>
 
     <section id="skills">
       <h2>Skills</h2>
       <ul>
-        <li>HTML5(완전기초)</li>
-        <li>CSS 조금씩 배워나가는 중입니다.</li>
+        <li>HTML5</li>
+        <li>CSS</li>
+        <li>JavaScript (학습 중)</li>
       </ul>
     </section>
 
     <section id="music">
-        <h2>🎵 My Favorite Songs</h2>
-        <div class="music-grid">
-          <div class="music-card">
-            <p><strong>jpop</strong></p>
-            <a href="https://youtube.com/playlist?list=PLzW--D5MU8sBf4SGPHXLzTfqocRcZBbp5&si=thbz5BswqqUKKc9a" target="_blank">▶️ 듣기</a>
-          </div>
-          <div class="music-card">
-            <p><strong>kpop</strong></p>
-            <a href="https://youtube.com/playlist?list=PLzW--D5MU8sB8ajiLekBSVp3-WPm2Vdnn&si=YJIW-WO-iZv1sNui" target="_blank">▶️ 듣기</a>
-          </div>
-          <div class="music-card">
-            <p><strong>piano</strong></p>
-            <a href="https://youtube.com/playlist?list=PLzW--D5MU8sCLY8aMrPBGSSN4DFn6Iz0i&si=4m10wV74RY9sHOdu" target="_blank">▶️ 듣기</a>
-          </div>
+      <h2>🎵 My Favorite Songs</h2>
+      <div class="music-grid">
+        <div class="music-card">
+          <p><strong>J-pop</strong></p>
+          <a href="https://youtube.com/playlist?list=PLzW--D5MU8sBf4SGPHXLzTfqocRcZBbp5" target="_blank">▶️ 듣기</a>
         </div>
-      </section>
+        <div class="music-card">
+          <p><strong>K-pop</strong></p>
+          <a href="https://youtube.com/playlist?list=PLzW--D5MU8sB8ajiLekBSVp3-WPm2Vdnn" target="_blank">▶️ 듣기</a>
+        </div>
+        <div class="music-card">
+          <p><strong>Piano</strong></p>
+          <a href="https://youtube.com/playlist?list=PLzW--D5MU8sCLY8aMrPBGSSN4DFn6Iz0i" target="_blank">▶️ 듣기</a>
+        </div>
+      </div>
+    </section>
 
     <section id="games">
       <h2>🎮 내가 요즘 즐기는 게임들</h2>
-     <div class="game-grid">
-
+      <div class="game-grid">
         <div class="game-card">
-            <a href="apex.html">
-              <h3>Apex Legends</h3>
-              <p>빠른 템포의 팀 기반 배틀로얄.</p>
-            </a>
-          </div>
-          
-
-          <div class="game-card">
-            <a href="overwatch.html">
-              <h3>overwatch</h3>
-              <p>5:5 팀전으로 팀합이 중요한 하이퍼FPS</p>
-            </a>
-          </div>
-
-          <div class="game-card">
-            <a href="valorant.html">
-              <h3>valotrant</h3>
-              <p>5:5팀전의 팀조합이 중요한 텍티컬FPS</p>
-            </a>
-          </div>
-
-          <div class="game-card">
-            <a href="WW.html">
-              <h3>Wuthering Waves</h3>
-              <p>아름다운배경과 이쁜 캐릭터들이 이룬 오픈월드형 캐릭터수집RPG</p>
-            </a>
-          </div>
-
-     </div>
+          <a href="apex.html">
+            <h3>Apex Legends</h3>
+            <p>빠른 템포의 팀 기반 배틀로얄 게임</p>
+          </a>
+        </div>
+        <div class="game-card">
+          <a href="overwatch.html">
+            <h3>Overwatch</h3>
+            <p>5:5 팀플 중심의 하이퍼 FPS</p>
+          </a>
+        </div>
+        <div class="game-card">
+          <a href="valorant.html">
+            <h3>Valorant</h3>
+            <p>정밀한 팀 기반 전술 FPS</p>
+          </a>
+        </div>
+        <div class="game-card">
+          <a href="WW.html">
+            <h3>Wuthering Waves</h3>
+            <p>오픈월드 캐릭터 수집형 RPG</p>
+          </a>
+        </div>
+      </div>
     </section>
-
-
 
     <section id="contact">
       <h2>Contact</h2>
       <p>📧 이메일: kimhana0555@gmail.com</p>
       <p>🔗 GitHub: <a href="https://github.com/kimhana0555">github.com/kimhana0555</a></p>
-      <p>🔗 discord: kimhanan</p>
+      <p>🔗 Discord: kimhanan</p>
       <p>🔗 Instagram: -</p>
     </section>
   </main>
